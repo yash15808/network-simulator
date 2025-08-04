@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('http://localhost:3001/api/status');
+        const response = await fetch('https://network-simulator-production.up.railway.app/api/status');
         const data = await response.json();
         setNetworkStatus(data);
       } catch (error) {
